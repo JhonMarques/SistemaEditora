@@ -1,0 +1,75 @@
+@CHARSET "UTF-8";
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.root {
+	
+}
+
+/* Topo de Janelas */
+
+.topo-janela {
+	-fx-border-color: transparent transparent gray transparent;
+	-fx-border-width: 2.0;
+	-fx-background-color: #f2f2f2;
+}
+
+.topo-janela-texto {
+	-fx-font-size: 18.0pt;
+}
+
+/* Botoes */
+
+.button {
+    -fx-border-style: none;
+    -fx-border-color: transparent;
+    -fx-background-color: #299bb4;
+    -fx-background-insets: 0.0;
+    -fx-border-insets: 0.0;
+    -fx-text-fill: white;
+}
+
+.button22 {
+    -fx-border-style: none;
+    -fx-border-color: transparent;
+    -fx-background-color: red;
+    -fx-background-insets: 0.0;
+    -fx-border-insets: 0.0;
+    -fx-text-fill: white;
+}
+
+/*Colocar Imagem nos botões */
+
+.buttonNovoCliente {
+	-fx-graphic: url('../imagens/novoCliente.png');
+}
+
+.button:hover {
+    -fx-background-color: #699ca7;
+}
+
+.button:pressed, .button:default:hover:pressed {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+}
+
+.button:focused {
+    -fx-border-color: black;
+    -fx-border-width: 1.0;
+    -fx-border-style: segments(1.0, 1.0);
+    -fx-background-insets: 0.0 0.0 0.0 0.0, 0.0, 1.0, 2.0;
+}
+
+.button:disabled, .button:default:disabled {
+    -fx-opacity: 0.4;
+    -fx-background-color: #cccccc;
+    -fx-text-fill: #212121;
+}
+
+.button:default {
+    -fx-background-color: #5585be;
+    -fx-text-fill: #ffffff;
+}
+
+.button:default:hover {
+    -fx-background-color: #219297;
+}

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="687.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="br.com.EditoraPremium.controller.CadEstadoController">
+  <bottom>
+    <HBox alignment="CENTER" prefHeight="127.0" prefWidth="687.0" BorderPane.alignment="CENTER">
+      <children>
+        <GridPane prefHeight="55.0" prefWidth="779.0">
+          <children>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="166.0" minWidth="10.0" prefWidth="115.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="333.0" minWidth="10.0" prefWidth="139.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="379.0" minWidth="10.0" prefWidth="144.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="404.0" minWidth="10.0" prefWidth="145.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="463.0" minWidth="10.0" prefWidth="145.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+            <GridPane fx:id="bntNew" GridPane.rowIndex="1">
+              <children>
+                <Button fx:id="btnSalvar" mnemonicParsing="false" onAction="#ButtonSalvar" prefHeight="23.0" prefWidth="78.0" text="Salvar" GridPane.columnIndex="2">
+                  <font>
+                    <Font name="System Bold" size="14.0" fx:id="x1" />
+                  </font>
+                </Button>
+                <Button fx:id="btnEditar" font="$x1" mnemonicParsing="false" onAction="#ButtonEditar" prefHeight="23.0" prefWidth="78.0" text="Editar" GridPane.columnIndex="3" />
+                <Button fx:id="btnExcluir" font="$x1" mnemonicParsing="false" onAction="#ButtonExcluir" prefHeight="23.0" prefWidth="78.0" text="Excluir" GridPane.columnIndex="4" />
+                <Button fx:id="btnCancelar" font="$x1" mnemonicParsing="false" onAction="#ButtonCancelar" prefHeight="23.0" prefWidth="95.0" text="Cancelar" GridPane.columnIndex="5" />
+                <Button fx:id="btnNew" font="$x1" mnemonicParsing="false" onAction="#ButtonNew" prefHeight="23.0" prefWidth="78.0" text="Novo" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+              </children>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="324.0" minWidth="10.0" prefWidth="233.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="324.0" minWidth="10.0" prefWidth="87.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="357.0" minWidth="10.0" prefWidth="86.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="298.0" minWidth="10.0" prefWidth="85.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="193.0" minWidth="10.0" prefWidth="87.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="201.0" minWidth="10.0" prefWidth="109.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+          </children>
+          <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          </columnConstraints>
+          <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          </rowConstraints>
+        </GridPane>
+      </children>
+    </HBox>
+  </bottom>
+  <center>
+    <HBox alignment="CENTER" prefHeight="129.0" prefWidth="687.0" BorderPane.alignment="CENTER">
+      <children>
+        <TableView fx:id="tbEstado" prefHeight="155.0" prefWidth="687.0">
+          <columns>
+            <TableColumn prefWidth="75.0" text="ID" fx:id="clnId" />
+            <TableColumn prefWidth="548.0" text="Estado" fx:id="clnEstado" />
+            <TableColumn minWidth="2.0" prefWidth="63.0" text="Sigla" fx:id="clnSigla" />
+          </columns>
+        </TableView>
+      </children>
+    </HBox>
+  </center>
+  <top>
+    <HBox alignment="CENTER" prefHeight="188.0" prefWidth="653.0" BorderPane.alignment="CENTER">
+      <children>
+        <GridPane prefHeight="188.0" prefWidth="656.0">
+          <children>
+            <GridPane GridPane.columnIndex="1" GridPane.rowIndex="1">
+              <children>
+                <Label prefHeight="24.0" prefWidth="87.0" text="       ID:">
+                  <font>
+                    <Font size="20.0" fx:id="x2" />
+                  </font>
+                </Label>
+                <TextField fx:id="txtId" GridPane.columnIndex="1" />
+              </children>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="142.0" minWidth="10.0" prefWidth="82.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="292.0" minWidth="10.0" prefWidth="70.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="323.0" minWidth="10.0" prefWidth="323.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+            <GridPane GridPane.columnIndex="1" GridPane.rowIndex="2">
+              <children>
+                <Label font="$x2" prefHeight="24.0" prefWidth="101.0" text="   Sigla:" />
+                <TextField fx:id="txtSigla" GridPane.columnIndex="1" />
+              </children>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="153.0" minWidth="10.0" prefWidth="80.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="291.0" minWidth="10.0" prefWidth="71.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="324.0" minWidth="10.0" prefWidth="324.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+            <GridPane GridPane.columnIndex="1" GridPane.rowIndex="3">
+              <children>
+                <Label font="$x2" text="Estado:" />
+                <TextField fx:id="txtEstado" GridPane.columnIndex="1" />
+              </children>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="153.0" minWidth="10.0" prefWidth="79.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="281.0" minWidth="10.0" prefWidth="165.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="231.0" minWidth="10.0" prefWidth="231.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+          </children>
+          <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="319.0" minWidth="10.0" prefWidth="178.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="501.0" minWidth="10.0" prefWidth="475.0" />
+          </columnConstraints>
+          <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          </rowConstraints>
+        </GridPane>
+      </children>
+    </HBox>
+  </top>
+</BorderPane>
